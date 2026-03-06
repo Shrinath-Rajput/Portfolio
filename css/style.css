@@ -1,24 +1,116 @@
 body{
-background:black;
+background:#0b0b0b;
 font-family:Arial;
 }
 
 .hero{
-height:100vh;
+min-height:100vh;
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
 }
 
-.hero span{
-color:orange;
+.profile-img{
+width:220px;
+height:220px;
+border-radius:50%;
+border:5px solid #1f1f1f;
 }
 
-.card{
-transition:0.3s;
+.name{
+color:#4da6ff;
 }
 
-.card:hover{
-transform:scale(1.05);
+.role{
+color:#bbb;
+margin-top:10px;
+}
+
+/* skill tags */
+
+.tags span{
+background:#1c1c1c;
+padding:8px 15px;
+border-radius:20px;
+margin:5px;
+display:inline-block;
+color:#ddd;
+}
+
+/* info cards */
+
+.info-card{
+background:#141414;
+padding:20px;
+border-radius:10px;
+text-align:center;
+color:white;
+}
+
+/* social icons */
+
+.social i{
+font-size:28px;
+margin-right:20px;
+color:white;
+cursor:pointer;
+}
+
+.social i:hover{
+color:#4da6ff;
+}
+
+.tags
+{
+    opacity: 0.75;
+}
+
+.tags:hover{
+    opacity: 1;
+}
+
+.social{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+margin-top:20px;
+}
+
+.social a{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.social i{
+font-size:28px;
+color:white;
+}
+
+.social img{
+width:28px;
+height:28px;
+filter: grayscale(100%) brightness(2);
+}
+
+.social a:hover{
+transform:scale(1.2);
+}
+
+.social{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+margin-top:20px;
+}
+
+.social a{
+color:white;
+font-size:28px;
+}
+
+.social a:hover{
+color:#4da6ff;
+transform:scale(1.2);
 }
