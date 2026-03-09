@@ -18,49 +18,35 @@ color:white;
 font-family:Arial;
 }
 
-/* section */
 .skills-section{
-padding:60px 0;
+padding:70px 0;
 }
 
-/* glass box */
-.skills-box{
-background:rgba(255,255,255,0.05);
-border-radius:15px;
-padding:40px;
-backdrop-filter:blur(10px);
-}
-
-/* skill circle */
-
-.skill{
-width:90px;
-height:90px;
-border-radius:50%;
-background:#111;
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-margin:20px;
+.skill-card{
+background:#151922;
+border-radius:12px;
+padding:25px;
+margin-bottom:30px;
 transition:0.3s;
 }
 
-.skill img{
-width:35px;
+.skill-card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 15px rgba(0,255,255,0.2);
 }
 
-.skill:hover{
-transform:scale(1.1);
-box-shadow:0 0 15px #00f2ff;
+.skill-card h4{
+margin-bottom:15px;
+color:#00eaff;
 }
 
-/* skill grid */
+.skill-card ul{
+padding-left:18px;
+}
 
-.skills-grid{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+.skill-card li{
+margin-bottom:6px;
+font-size:15px;
 }
 
 </style>
@@ -71,81 +57,188 @@ justify-content:center;
 
 <section class="skills-section container">
 
-<h2 class="text-center mb-4">My Skills</h2>
+<h1 class="text-center mb-5">My Skills</h1>
 
-<p class="text-center text-secondary mb-5">
-Technical expertise blended with creativity — explore my core competencies below.
-</p>
+<div class="row">
 
-<div class="skills-box">
+<!-- Languages -->
 
-<div class="skills-grid">
-
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-<small>HTML</small>
+<div class="col-md-4">
+<div class="skill-card">
+<h4>Programming Languages</h4>
+<ul>
+<li>Python</li>
+<li>Java</li>
+<li>C++</li>
+<li>C</li>
+</ul>
+</div>
 </div>
 
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-<small>CSS</small>
+<!-- Frontend -->
+
+<div class="col-md-4">
+<div class="skill-card">
+<h4>Frontend</h4>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Bootstrap</li>
+<li>Tailwind</li>
+</ul>
+</div>
 </div>
 
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-<small>JS</small>
+<!-- Backend -->
+
+<div class="col-md-4">
+<div class="skill-card">
+<h4>Backend</h4>
+<ul>
+<li>NodeJS</li>
+<li>ExpressJS</li>
+</ul>
+</div>
 </div>
 
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
-<small>React</small>
+<!-- Libraries -->
+
+<div class="col-md-4">
+<div class="skill-card">
+<h4>Libraries / Frameworks</h4>
+<ul>
+<li>Pandas</li>
+<li>NumPy</li>
+<li>Matplotlib</li>
+<li>Seaborn</li>
+<li>OpenCV</li>
+<li>TensorFlow</li>
+<li>Scikit-learn</li>
+</ul>
+</div>
 </div>
 
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-<small>Python</small>
+<!-- Tools -->
+
+<div class="col-md-4">
+<div class="skill-card">
+<h4>Tools</h4>
+<ul>
+<li>Power BI</li>
+<li>Excel</li>
+<li>Jupyter Notebook</li>
+<li>Git</li>
+<li>VS Code</li>
+<li>PyCharm</li>
+<li>Google Colab</li>
+<li>Docker</li>
+<li>MLflow</li>
+<li>DagsHub</li>
+<li>BentoML</li>
+</ul>
+</div>
 </div>
 
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
-<small>Java</small>
+<!-- Databases -->
+
+<div class="col-md-4">
+<div class="skill-card">
+<h4>Databases</h4>
+<ul>
+<li>MySQL</li>
+<li>MongoDB</li>
+</ul>
+</div>
 </div>
 
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
-<small>MySQL</small>
+<!-- Statistics -->
+
+<div class="col-md-6">
+<div class="skill-card">
+<h4>Statistical & Data Skills</h4>
+<ul>
+<li>Statistics</li>
+<li>Probability</li>
+<li>Hypothesis Testing</li>
+<li>Data Cleaning</li>
+<li>Feature Engineering</li>
+<li>Exploratory Data Analysis (EDA)</li>
+</ul>
+</div>
 </div>
 
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
-<small>MongoDB</small>
+<!-- Machine Learning -->
+
+<div class="col-md-6">
+<div class="skill-card">
+<h4>Machine Learning Algorithms</h4>
+<ul>
+<li>Linear Regression</li>
+<li>Multiple Linear Regression</li>
+<li>Logistic Regression</li>
+<li>Support Vector Machine</li>
+<li>Naive Bayes</li>
+<li>K-Nearest Neighbour</li>
+<li>Decision Tree</li>
+<li>Random Forest</li>
+<li>AdaBoost</li>
+<li>Gradient Boosting</li>
+<li>XGBoost</li>
+<li>PCA</li>
+<li>K-Means Clustering</li>
+<li>Hierarchical Clustering</li>
+<li>DBSCAN</li>
+<li>Silhouette Scoring</li>
+<li>Anomaly Detection</li>
+</ul>
+</div>
 </div>
 
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
-<small>Git</small>
+<!-- NLP -->
+
+<div class="col-md-6">
+<div class="skill-card">
+<h4>NLP</h4>
+<ul>
+<li>Text Preprocessing</li>
+<li>TF-IDF</li>
+<li>Bag of Words</li>
+<li>Word Embeddings</li>
+<li>Word2Vec</li>
+<li>Sentiment Analysis</li>
+</ul>
+</div>
 </div>
 
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg">
-<small>TensorFlow</small>
+<!-- Deep Learning -->
+
+<div class="col-md-6">
+<div class="skill-card">
+<h4>Deep Learning</h4>
+<ul>
+<li>ANN</li>
+<li>CNN</li>
+<li>RNN</li>
+<li>LSTM</li>
+<li>Model Optimization</li>
+<li>Hyperparameter Tuning</li>
+</ul>
+</div>
 </div>
 
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg">
-<small>OpenCV</small>
-</div>
+<!-- Other -->
 
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
-<small>C</small>
+<div class="col-md-12">
+<div class="skill-card">
+<h4>Other Skills</h4>
+<ul>
+<li>ETL</li>
+<li>Data Cleaning</li>
+<li>Version Control</li>
+<li>Data Visualization</li>
+</ul>
 </div>
-
-<div class="skill">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
-<small>C++</small>
-</div>
-
 </div>
 
 </div>
