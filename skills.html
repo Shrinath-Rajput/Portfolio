@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
 
 <meta charset="UTF-8">
@@ -9,41 +10,147 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css">
+<style>
+
+body{
+background:#0f1115;
+color:white;
+font-family:Arial;
+}
+
+/* section */
+.skills-section{
+padding:60px 0;
+}
+
+/* glass box */
+.skills-box{
+background:rgba(255,255,255,0.05);
+border-radius:15px;
+padding:40px;
+backdrop-filter:blur(10px);
+}
+
+/* skill circle */
+
+.skill{
+width:90px;
+height:90px;
+border-radius:50%;
+background:#111;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+margin:20px;
+transition:0.3s;
+}
+
+.skill img{
+width:35px;
+}
+
+.skill:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px #00f2ff;
+}
+
+/* skill grid */
+
+.skills-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<div id="navbar"></div>
+<section class="skills-section container">
 
-<section class="container text-white py-5">
+<h2 class="text-center mb-4">My Skills</h2>
 
-<h1>My Skills</h1>
+<p class="text-center text-secondary mb-5">
+Technical expertise blended with creativity — explore my core competencies below.
+</p>
 
-<p>HTML</p>
-<div class="progress">
-<div class="progress-bar bg-warning" style="width:90%">90%</div>
+<div class="skills-box">
+
+<div class="skills-grid">
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+<small>HTML</small>
 </div>
 
-<p class="mt-3">CSS</p>
-<div class="progress">
-<div class="progress-bar bg-warning" style="width:85%">85%</div>
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+<small>CSS</small>
 </div>
 
-<p class="mt-3">JavaScript</p>
-<div class="progress">
-<div class="progress-bar bg-warning" style="width:80%">80%</div>
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+<small>JS</small>
 </div>
 
-<p class="mt-3">Python</p>
-<div class="progress">
-<div class="progress-bar bg-warning" style="width:75%">75%</div>
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+<small>React</small>
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+<small>Python</small>
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+<small>Java</small>
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+<small>MySQL</small>
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
+<small>MongoDB</small>
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+<small>Git</small>
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg">
+<small>TensorFlow</small>
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg">
+<small>OpenCV</small>
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">
+<small>C</small>
+</div>
+
+<div class="skill">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+<small>C++</small>
+</div>
+
+</div>
+
 </div>
 
 </section>
-
-<script src="js/script.js"></script>
 
 </body>
 </html>
