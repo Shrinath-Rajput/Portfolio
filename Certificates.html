@@ -22,21 +22,18 @@ font-family:Arial;
 
 .page-title{
 text-align:center;
-margin:60px 0;
+margin:100px 0 40px;
 font-size:40px;
 color:#00eaff;
 }
 
-/* certificate grid */
+/* grid */
 
 .cert-grid{
 
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:30px;
-
 padding:40px;
 
 }
@@ -46,13 +43,9 @@ padding:40px;
 .cert-card{
 
 background:#151922;
-
-border-radius:10px;
-
+border-radius:12px;
 overflow:hidden;
-
 transition:0.3s;
-
 cursor:pointer;
 
 }
@@ -60,7 +53,6 @@ cursor:pointer;
 .cert-card:hover{
 
 transform:scale(1.05);
-
 box-shadow:0 0 20px rgba(0,255,255,0.4);
 
 }
@@ -70,38 +62,43 @@ box-shadow:0 0 20px rgba(0,255,255,0.4);
 .cert-card img{
 
 width:100%;
-
-height:200px;
-
-object-fit:cover;
+height:auto;
+object-fit:contain;
+background:white;
 
 }
 
-/* text */
+/* title */
 
 .cert-title{
 
 padding:15px;
-
 font-size:18px;
-
 text-align:center;
-
 color:#00eaff;
 
 }
 
 /* modal */
 
+.modal-dialog{
+
+max-width:95%;
+
+}
+
 .modal-content{
 
-background:#000;
+background:black;
+padding:10px;
 
 }
 
 .modal img{
 
 width:100%;
+height:auto;
+border-radius:10px;
 
 }
 
@@ -111,6 +108,8 @@ width:100%;
 
 <body>
 
+
+<!-- Navbar -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
@@ -126,51 +125,20 @@ width:100%;
 
 <ul class="navbar-nav ms-auto">
 
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="about.html">About Me</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="projects.html">Projects</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="skills.html">Skills</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="certificates.html">Certificates</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="blog.html">Blog</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="resume.html">Resume</a>
-</li>
-
-
-
-<li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+<li class="nav-item"><a class="nav-link active" href="certificates.html">Certificates</a></li>
+<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
 </ul>
 
 </div>
-
 </div>
-
 </nav>
-
-
-
-
 
 
 
@@ -180,217 +148,219 @@ width:100%;
 
 <div class="cert-grid">
 
-<!-- Certificate 1 -->
 
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert1">
+<!-- Hackathon -->
 
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#hack">
 <img src="images/Hack.jpeg">
-
 <div class="cert-title">Mumbai Hacks Hackathon</div>
-
 </div>
 
-<!-- Certificate 2 -->
 
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert2">
+<!-- IBM -->
 
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#ibm">
 <img src="images/IBM.jpeg">
-
 <div class="cert-title">IBM Python Certificate</div>
-
 </div>
 
-<!-- Certificate 3 -->
 
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert3">
+<!-- Data Science -->
 
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#bootcamp">
 <img src="images/MLT.jpeg">
-
 <div class="cert-title">Data Science Bootcamp</div>
-
 </div>
 
-<!-- Certificate 4 -->
 
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert4">
+<!-- Programming -->
 
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#program">
 <img src="images/Ml_cer.jpeg">
-
 <div class="cert-title">Programming Certificate</div>
-
 </div>
 
 
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert7">
+<!-- Java -->
 
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#java">
 <img src="images/Java11.jpeg">
-
-<div class="cert-title">Java  </div>
-
+<div class="cert-title">Java</div>
 </div>
 
 
+<!-- Visit -->
 
-
-
-<!-- Certificate 5 -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert5">
-
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#visit">
 <img src="images/Visit.jpeg">
-
 <div class="cert-title">AI Industrial Visit</div>
-
 </div>
 
-<!-- Certificate 6 -->
 
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert6">
+<!-- MSBTE -->
 
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#msbte">
 <img src="images/Out.jpeg">
-
-<div class="cert-title">Out Of Out In MSBTE </div>
-
+<div class="cert-title">Out Of Out In MSBTE</div>
 </div>
 
 
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert7">
+<!-- IOT -->
 
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#iot">
 <img src="images/IOT.jpeg">
-
-<div class="cert-title">IOT Workshop </div>
-
+<div class="cert-title">IOT Workshop</div>
 </div>
 
 
+<!-- SIT -->
 
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert6">
-
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#sit">
 <img src="images/SIT2.jpeg">
-
 <div class="cert-title">Tech Event Participation</div>
-
 </div>
 
-<!-- Certificate 7 -->
 
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert7">
+<!-- Innovate -->
 
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#innovate">
 <img src="images/Sit1.jpeg">
-
 <div class="cert-title">Innovate 2K22</div>
-
 </div>
 
 
+<!-- Sit -->
 
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert7">
-
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#sit3">
 <img src="images/Sit3.jpeg">
-
-<div class="cert-title">Innovate </div>
-
+<div class="cert-title">Innovate</div>
 </div>
 
-<!-- Certificate 8 -->
 
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert7">
+<!-- Reports -->
 
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#report">
 <img src="images/Reports.jpeg">
+<div class="cert-title">Diploma Reports</div>
+</div>
 
-<div class="cert-title">Diploma Reports  </div>
 
+</div>
 </div>
 
 
 
+<!-- MODALS -->
 
-
-<!-- MODAL -->
-
-<div class="modal fade" id="cert1">
+<div class="modal fade" id="hack">
 <div class="modal-dialog modal-xl">
 <div class="modal-content">
-
-<img src="images/mumbaihack.jpg">
-
+<img src="images/Hack.jpeg">
 </div>
 </div>
 </div>
 
-<div class="modal fade" id="cert2">
+
+<div class="modal fade" id="ibm">
 <div class="modal-dialog modal-xl">
 <div class="modal-content">
-
-<img src="images/ibm_python.jpg">
-
+<img src="images/IBM.jpeg">
 </div>
 </div>
 </div>
 
-<div class="modal fade" id="cert3">
+
+<div class="modal fade" id="bootcamp">
 <div class="modal-dialog modal-xl">
 <div class="modal-content">
-
-<img src="images/datascience_bootcamp.jpg">
-
+<img src="images/MLT.jpeg">
 </div>
 </div>
 </div>
 
-<div class="modal fade" id="cert4">
+
+<div class="modal fade" id="program">
 <div class="modal-dialog modal-xl">
 <div class="modal-content">
-
-<img src="images/disha_programming.jpg">
-
+<img src="images/Ml_cer.jpeg">
 </div>
 </div>
 </div>
 
-<div class="modal fade" id="cert5">
+
+<div class="modal fade" id="java">
 <div class="modal-dialog modal-xl">
 <div class="modal-content">
-
-<img src="images/ai_industrial.jpg">
-
+<img src="images/Java11.jpeg">
 </div>
 </div>
 </div>
 
-<div class="modal fade" id="cert6">
+
+<div class="modal fade" id="visit">
 <div class="modal-dialog modal-xl">
 <div class="modal-content">
-
-<img src="images/sharad_institute.jpg">
-
+<img src="images/Visit.jpeg">
 </div>
 </div>
 </div>
 
-<div class="modal fade" id="cert7">
+
+<div class="modal fade" id="msbte">
 <div class="modal-dialog modal-xl">
 <div class="modal-content">
-
-<img src="images/innovate2k22.jpg">
-
+<img src="images/Out.jpeg">
 </div>
 </div>
 </div>
 
-<div class="modal fade" id="cert8">
+
+<div class="modal fade" id="iot">
 <div class="modal-dialog modal-xl">
 <div class="modal-content">
+<img src="images/IOT.jpeg">
+</div>
+</div>
+</div>
 
-<img src="images/svl_ai_workshop.jpg">
 
+<div class="modal fade" id="sit">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+<img src="images/SIT2.jpeg">
 </div>
 </div>
 </div>
+
+
+<div class="modal fade" id="innovate">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+<img src="images/Sit1.jpeg">
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="sit3">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+<img src="images/Sit3.jpeg">
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="report">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+<img src="images/Reports.jpeg">
+</div>
+</div>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>

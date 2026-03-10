@@ -268,3 +268,41 @@ transition:0.3s;
 transform:scale(1.02);
 
 }
+
+
+
+
+
+
+
+
+
+.form-control{
+
+background:#0f1115;
+
+border:none;
+
+color:white;
+
+margin-bottom:15px;
+
+}
+
+/* placeholder white */
+
+input::placeholder,
+textarea::placeholder{
+color:white !important;
+opacity:1;
+}
+
+.form-control:focus{
+
+box-shadow:0 0 10px #00eaff;
+
+background:#0f1115;
+
+color:white;
+
+}
