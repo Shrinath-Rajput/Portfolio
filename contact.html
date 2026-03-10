@@ -12,6 +12,9 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<!-- Animation -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
 <style>
 
 body{
@@ -23,154 +26,93 @@ font-family:Arial;
 /* section */
 
 .contact-section{
-
 min-height:100vh;
-
 display:flex;
-
 align-items:center;
-
 justify-content:center;
-
 }
 
 /* card */
 
 .contact-box{
-
 background:#151922;
-
 padding:40px;
-
 border-radius:15px;
-
 width:500px;
-
 text-align:center;
-
 box-shadow:0 0 25px rgba(0,255,255,0.15);
-
 }
 
 /* heading */
 
 .contact-title{
-
 font-size:32px;
-
 color:#00eaff;
-
 margin-bottom:10px;
-
 }
 
 .contact-sub{
-
 color:#aaa;
-
 margin-bottom:25px;
-
 }
 
 /* icons */
 
 .social-icons{
-
 margin-bottom:25px;
-
 }
 
 .social-icons a{
-
 display:inline-flex;
-
 align-items:center;
-
 justify-content:center;
-
 width:45px;
-
 height:45px;
-
 margin:6px;
-
 border-radius:50%;
-
 background:#0f1115;
-
 color:white;
-
 font-size:18px;
-
 text-decoration:none;
-
 transition:0.3s;
-
 }
 
 .social-icons a:hover{
-
 background:#00eaff;
-
 color:black;
-
 transform:scale(1.1);
-
 }
 
 /* inputs */
 
 .form-control{
-
 background:#0f1115;
-
 border:none;
-
 color:white;
-
 margin-bottom:15px;
-
 }
 
 .form-control:focus{
-
 box-shadow:0 0 10px #00eaff;
-
 background:#0f1115;
-
 color:white;
-
 }
 
 /* button */
 
 .send-btn{
-
 background:#007bff;
-
 border:none;
-
 width:100%;
-
 padding:12px;
-
 color:white;
-
 border-radius:6px;
-
 transition:0.3s;
-
 }
 
 .send-btn:hover{
-
 background:#00eaff;
-
 color:black;
-
-
-
-
 }
 
 </style>
@@ -178,8 +120,6 @@ color:black;
 </head>
 
 <body>
-
-<!-- Navbar -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
@@ -195,39 +135,14 @@ color:black;
 
 <ul class="navbar-nav ms-auto">
 
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="about.html">About Me</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="projects.html">Projects</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="skills.html">Skills</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="certificates.html">Certificates</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="blog.html">Blog</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="resume.html">Resume</a>
-</li>
-
-
-
-<li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+<li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
 
 </ul>
 
@@ -240,17 +155,17 @@ color:black;
 
 <section class="contact-section">
 
-<div class="contact-box">
+<div class="contact-box" data-aos="zoom-in">
 
-<h2 class="contact-title">Let's Connect & Collaborate 💙</h2>
+<h2 class="contact-title" data-aos="fade-down">Let's Connect & Collaborate 💙</h2>
 
-<p class="contact-sub">
+<p class="contact-sub" data-aos="fade-up">
 Whether it's a new project, a collaboration, or just to say hi — I'd love to hear from you!
 </p>
 
 <!-- icons -->
 
-<div class="social-icons">
+<div class="social-icons" data-aos="fade-up" data-aos-delay="200">
 
 <a href="https://github.com/Shrinath-Rajput"><i class="fab fa-github"></i></a>
 
@@ -267,11 +182,7 @@ Whether it's a new project, a collaboration, or just to say hi — I'd love to h
 </div>
 
 
-<!-- form -->
-
-<!-- form -->
-
-<form>
+<form data-aos="fade-up" data-aos-delay="400">
 
 <input 
 type="text" 
@@ -301,6 +212,15 @@ style="background:#0f1115;color:white;"
 </div>
 
 </section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+duration:1000,
+once:true
+});
+</script>
 
 </body>
 

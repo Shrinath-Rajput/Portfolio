@@ -10,6 +10,9 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- Animation -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
 <style>
 
 body{
@@ -18,8 +21,6 @@ color:white;
 font-family:Arial;
 }
 
-/* title */
-
 .page-title{
 text-align:center;
 margin:100px 0 40px;
@@ -27,79 +28,53 @@ font-size:40px;
 color:#00eaff;
 }
 
-/* grid */
-
 .cert-grid{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:30px;
 padding:40px;
-
 }
 
-/* card */
-
 .cert-card{
-
 background:#151922;
 border-radius:12px;
 overflow:hidden;
 transition:0.3s;
 cursor:pointer;
-
 }
 
 .cert-card:hover{
-
 transform:scale(1.05);
 box-shadow:0 0 20px rgba(0,255,255,0.4);
-
 }
 
-/* image */
-
 .cert-card img{
-
 width:100%;
 height:auto;
 object-fit:contain;
 background:white;
-
 }
 
-/* title */
-
 .cert-title{
-
 padding:15px;
 font-size:18px;
 text-align:center;
 color:#00eaff;
-
 }
 
-/* modal */
-
 .modal-dialog{
-
 max-width:95%;
-
 }
 
 .modal-content{
-
 background:black;
 padding:10px;
-
 }
 
 .modal img{
-
 width:100%;
 height:auto;
 border-radius:10px;
-
 }
 
 </style>
@@ -107,9 +82,6 @@ border-radius:10px;
 </head>
 
 <body>
-
-
-<!-- Navbar -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
@@ -141,226 +113,102 @@ border-radius:10px;
 </nav>
 
 
-
 <div class="container">
 
-<h1 class="page-title">My Certificates</h1>
+<h1 class="page-title" data-aos="fade-down">My Certificates</h1>
 
 <div class="cert-grid">
 
-
-<!-- Hackathon -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#hack">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="0" data-bs-toggle="modal" data-bs-target="#hack">
 <img src="images/Hack.jpeg">
 <div class="cert-title">Mumbai Hacks Hackathon</div>
 </div>
 
-
-<!-- IBM -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#ibm">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="100" data-bs-toggle="modal" data-bs-target="#ibm">
 <img src="images/IBM.jpeg">
 <div class="cert-title">IBM Python Certificate</div>
 </div>
 
-
-<!-- Data Science -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#bootcamp">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#bootcamp">
 <img src="images/MLT.jpeg">
 <div class="cert-title">Data Science Bootcamp</div>
 </div>
 
-
-<!-- Programming -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#program">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="300" data-bs-toggle="modal" data-bs-target="#program">
 <img src="images/Ml_cer.jpeg">
 <div class="cert-title">Programming Certificate</div>
 </div>
 
-
-<!-- Java -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#java">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="400" data-bs-toggle="modal" data-bs-target="#java">
 <img src="images/Java11.jpeg">
 <div class="cert-title">Java</div>
 </div>
 
-
-<!-- Visit -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#visit">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="500" data-bs-toggle="modal" data-bs-target="#visit">
 <img src="images/Visit.jpeg">
 <div class="cert-title">AI Industrial Visit</div>
 </div>
 
-
-<!-- MSBTE -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#msbte">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="600" data-bs-toggle="modal" data-bs-target="#msbte">
 <img src="images/Out.jpeg">
 <div class="cert-title">Out Of Out In MSBTE</div>
 </div>
 
-
-<!-- IOT -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#iot">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="700" data-bs-toggle="modal" data-bs-target="#iot">
 <img src="images/IOT.jpeg">
 <div class="cert-title">IOT Workshop</div>
 </div>
 
-
-<!-- SIT -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#sit">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="800" data-bs-toggle="modal" data-bs-target="#sit">
 <img src="images/SIT2.jpeg">
 <div class="cert-title">Tech Event Participation</div>
 </div>
 
-
-<!-- Innovate -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#innovate">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="900" data-bs-toggle="modal" data-bs-target="#innovate">
 <img src="images/Sit1.jpeg">
 <div class="cert-title">Innovate 2K22</div>
 </div>
 
-
-<!-- Sit -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#sit3">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="1000" data-bs-toggle="modal" data-bs-target="#sit3">
 <img src="images/Sit3.jpeg">
 <div class="cert-title">Innovate</div>
 </div>
 
-
-<!-- Reports -->
-
-<div class="cert-card" data-bs-toggle="modal" data-bs-target="#report">
+<div class="cert-card" data-aos="fade-up" data-aos-delay="1100" data-bs-toggle="modal" data-bs-target="#report">
 <img src="images/Reports.jpeg">
 <div class="cert-title">Diploma Reports</div>
 </div>
 
-
 </div>
 </div>
-
 
 
 <!-- MODALS -->
 
-<div class="modal fade" id="hack">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/Hack.jpeg">
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="ibm">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/IBM.jpeg">
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="bootcamp">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/MLT.jpeg">
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="program">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/Ml_cer.jpeg">
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="java">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/Java11.jpeg">
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="visit">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/Visit.jpeg">
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="msbte">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/Out.jpeg">
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="iot">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/IOT.jpeg">
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="sit">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/SIT2.jpeg">
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="innovate">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/Sit1.jpeg">
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="sit3">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/Sit3.jpeg">
-</div>
-</div>
-</div>
-
-
-<div class="modal fade" id="report">
-<div class="modal-dialog modal-xl">
-<div class="modal-content">
-<img src="images/Reports.jpeg">
-</div>
-</div>
-</div>
+<div class="modal fade" id="hack"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/Hack.jpeg"></div></div></div>
+<div class="modal fade" id="ibm"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/IBM.jpeg"></div></div></div>
+<div class="modal fade" id="bootcamp"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/MLT.jpeg"></div></div></div>
+<div class="modal fade" id="program"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/Ml_cer.jpeg"></div></div></div>
+<div class="modal fade" id="java"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/Java11.jpeg"></div></div></div>
+<div class="modal fade" id="visit"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/Visit.jpeg"></div></div></div>
+<div class="modal fade" id="msbte"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/Out.jpeg"></div></div></div>
+<div class="modal fade" id="iot"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/IOT.jpeg"></div></div></div>
+<div class="modal fade" id="sit"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/SIT2.jpeg"></div></div></div>
+<div class="modal fade" id="innovate"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/Sit1.jpeg"></div></div></div>
+<div class="modal fade" id="sit3"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/Sit3.jpeg"></div></div></div>
+<div class="modal fade" id="report"><div class="modal-dialog modal-xl"><div class="modal-content"><img src="images/Reports.jpeg"></div></div></div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+duration:800,
+once:true
+});
+</script>
 
 </body>
 </html>
