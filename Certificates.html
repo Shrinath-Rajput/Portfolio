@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Certificates</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+background:#0f1115;
+color:white;
+font-family:Arial;
+}
+
+/* title */
+
+.page-title{
+text-align:center;
+margin:60px 0;
+font-size:40px;
+color:#00eaff;
+}
+
+/* certificate grid */
+
+.cert-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+padding:40px;
+
+}
+
+/* card */
+
+.cert-card{
+
+background:#151922;
+
+border-radius:10px;
+
+overflow:hidden;
+
+transition:0.3s;
+
+cursor:pointer;
+
+}
+
+.cert-card:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 20px rgba(0,255,255,0.4);
+
+}
+
+/* image */
+
+.cert-card img{
+
+width:100%;
+
+height:200px;
+
+object-fit:cover;
+
+}
+
+/* text */
+
+.cert-title{
+
+padding:15px;
+
+font-size:18px;
+
+text-align:center;
+
+color:#00eaff;
+
+}
+
+/* modal */
+
+.modal-content{
+
+background:#000;
+
+}
+
+.modal img{
+
+width:100%;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">Shrinath Rajput</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About Me</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="projects.html">Projects</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="skills.html">Skills</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="certificates.html">Certificates</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="blog.html">Blog</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="resume.html">Resume</a>
+</li>
+
+
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+
+
+
+
+<div class="container">
+
+<h1 class="page-title">My Certificates</h1>
+
+<div class="cert-grid">
+
+<!-- Certificate 1 -->
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert1">
+
+<img src="images/Hack.jpeg">
+
+<div class="cert-title">Mumbai Hacks Hackathon</div>
+
+</div>
+
+<!-- Certificate 2 -->
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert2">
+
+<img src="images/IBM.jpeg">
+
+<div class="cert-title">IBM Python Certificate</div>
+
+</div>
+
+<!-- Certificate 3 -->
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert3">
+
+<img src="images/MLT.jpeg">
+
+<div class="cert-title">Data Science Bootcamp</div>
+
+</div>
+
+<!-- Certificate 4 -->
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert4">
+
+<img src="images/Ml_cer.jpeg">
+
+<div class="cert-title">Programming Certificate</div>
+
+</div>
+
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert7">
+
+<img src="images/Java11.jpeg">
+
+<div class="cert-title">Java  </div>
+
+</div>
+
+
+
+
+
+<!-- Certificate 5 -->
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert5">
+
+<img src="images/Visit.jpeg">
+
+<div class="cert-title">AI Industrial Visit</div>
+
+</div>
+
+<!-- Certificate 6 -->
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert6">
+
+<img src="images/Out.jpeg">
+
+<div class="cert-title">Out Of Out In MSBTE </div>
+
+</div>
+
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert7">
+
+<img src="images/IOT.jpeg">
+
+<div class="cert-title">IOT Workshop </div>
+
+</div>
+
+
+
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert6">
+
+<img src="images/SIT2.jpeg">
+
+<div class="cert-title">Tech Event Participation</div>
+
+</div>
+
+<!-- Certificate 7 -->
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert7">
+
+<img src="images/Sit1.jpeg">
+
+<div class="cert-title">Innovate 2K22</div>
+
+</div>
+
+
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert7">
+
+<img src="images/Sit3.jpeg">
+
+<div class="cert-title">Innovate </div>
+
+</div>
+
+<!-- Certificate 8 -->
+
+<div class="cert-card" data-bs-toggle="modal" data-bs-target="#cert7">
+
+<img src="images/Reports.jpeg">
+
+<div class="cert-title">Diploma Reports  </div>
+
+</div>
+
+
+
+
+
+<!-- MODAL -->
+
+<div class="modal fade" id="cert1">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+
+<img src="images/mumbaihack.jpg">
+
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="cert2">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+
+<img src="images/ibm_python.jpg">
+
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="cert3">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+
+<img src="images/datascience_bootcamp.jpg">
+
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="cert4">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+
+<img src="images/disha_programming.jpg">
+
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="cert5">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+
+<img src="images/ai_industrial.jpg">
+
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="cert6">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+
+<img src="images/sharad_institute.jpg">
+
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="cert7">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+
+<img src="images/innovate2k22.jpg">
+
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="cert8">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+
+<img src="images/svl_ai_workshop.jpg">
+
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

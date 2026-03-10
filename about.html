@@ -1,39 +1,400 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>About</title>
+<title>About Me</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-<link rel="stylesheet" href="css/style.css">
+<style>
+
+body{
+background:#0f1115;
+color:white;
+font-family:Arial;
+}
+
+/* navbar */
+
+.navbar{
+background:#0f1115;
+}
+
+/* about */
+
+.about-section{
+padding:70px 0;
+max-width:900px;
+margin:auto;
+}
+
+.about-section h2{
+color:#00eaff;
+margin-bottom:20px;
+}
+
+.about-text{
+color:#cfcfcf;
+line-height:1.7;
+margin-bottom:40px;
+}
+
+/* education */
+
+.education-title{
+color:#00eaff;
+margin-bottom:30px;
+}
+
+.edu-card{
+background:#151922;
+padding:25px;
+border-radius:10px;
+margin-bottom:20px;
+transition:0.3s;
+}
+
+.edu-card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 15px rgba(0,255,255,0.3);
+}
+
+.edu-icon{
+font-size:28px;
+color:#00eaff;
+margin-right:10px;
+}
+
+.edu-head{
+font-size:18px;
+font-weight:bold;
+}
+
+.edu-sub{
+font-size:14px;
+color:#cfcfcf;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<div id="navbar"></div>
+<!-- NAVBAR -->
 
-<section class="container text-white py-5">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
-<h1>About Me</h1>
+<div class="container">
 
-<p>
-I am a passionate Web Developer and ML Developer.
-I build modern websites and machine learning projects.
+<a class="navbar-brand" href="index.html">Shrinath Rajput</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About Me</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="projects.html">Projects</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="skills.html">Skills</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="certificates.html">Certificates</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="blog.html">Blog</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="resume.html">Resume</a>
+</li>
+
+
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ABOUT -->
+
+<section class="about-section container">
+
+<h2>About Me</h2>
+
+<p class="about-text">
+
+Hi, I'm <b>Shrinath Rajput</b> — an aspiring Artificial Intelligence Engineer and Machine Learning enthusiast who loves turning ideas into intelligent systems.
+
+I'm deeply fascinated by how data and algorithms can shape the future of healthcare, automation, and creativity in technology.
+
+Beyond code, I enjoy exploring design, experimenting with motion and interaction, and finding ways to blend artistic creativity with technical precision. My goal is to build solutions that not only perform — but also inspire.
+
+4th-year B.Tech AI Engineering student with hands-on experience in ML & DL projects. Proficient in Python, Scikit-learn, PyTorch, TensorFlow and data preprocessing.
+
+Seeking internship opportunities to apply skills and contribute to impactful AI solutions.
+
 </p>
 
-<p>
-Currently working on projects like Food Grain Detection,
-Garbage Detection using OpenCV and Machine Learning.
-</p>
+<h3 class="education-title">Education</h3>
+
+<!-- College -->
+
+<div class="edu-card">
+
+<div class="edu-head">
+<i class="bi bi-building edu-icon"></i>
+B.Tech in Artificial Intelligence and Machine Learning 
+</div>
+
+<div class="edu-sub">
+D. Y. Patil Agriculture and Technical University  — Kolhapur, Maharashtra
+</div>
+
+<div class="edu-sub">
+Currently Learning 3th Year  | CGPA: 9.0
+</div>
+
+<div class="edu-sub">
+2023 – 2027
+</div>
+
+</div>
+
+<!-- Diploma -->
+
+<div class="edu-card">
+
+<div class="edu-head">
+<i class="bi bi-mortarboard edu-icon"></i>
+Diploma 
+</div>
+
+<div class="edu-sub">
+Sharad Institute of Technology College of Engineering — Inchalkaranji, Maharashtra
+</div>
+
+<div class="edu-sub">
+MSBTE Board| Percentage: 82%
+</div>
+
+<div class="edu-sub">
+Completed in 2023
+</div>
+
+</div>
+
+<!-- 10th -->
+
+<div class="edu-card">
+
+<div class="edu-head">
+<i class="bi bi-house-door edu-icon"></i>
+Secondary Education (10th Grade)
+</div>
+
+<div class="edu-sub">
+New English School New Rajapur — Pattankodoli, Maharashtra
+</div>
+
+<div class="edu-sub">
+SSC Board | Percentage: 86.20%
+</div>
+
+<div class="edu-sub">
+Completed in 2020
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- COURSES -->
+
+<h3 class="education-title mt-5">Courses & Learning</h3>
+
+<div class="edu-card">
+
+<div class="edu-head">
+<i class="bi bi-code-slash edu-icon"></i>
+Full Stack Development by Shradha Khapra
+</div>
+
+<div class="edu-sub">
+Course & Practice Repository
+</div>
+
+<a href="https://github.com/Shrinath-Rajput/Full-Stack-Development" target="_blank" class="btn btn-outline-info btn-sm mt-2">
+View Repository
+</a>
+
+</div>
+
+
+<div class="edu-card">
+
+<div class="edu-head">
+<i class="bi bi-filetype-py edu-icon"></i>
+Full Course of Python
+</div>
+
+<div class="edu-sub">
+Complete Python Programming Course
+</div>
+
+<a href="https://github.com/Shrinath-Rajput/-Full-Course-of-Python" target="_blank" class="btn btn-outline-info btn-sm mt-2">
+View Repository
+</a>
+
+</div>
+
+
+<div class="edu-card">
+
+<div class="edu-head">
+<i class="bi bi-cpu edu-icon"></i>
+Machine Learning Course
+</div>
+
+<div class="edu-sub">
+Complete Machine Learning Learning Repository
+</div>
+
+<a href="https://github.com/Shrinath-Rajput/Full_Course-of-Machine-Learning" target="_blank" class="btn btn-outline-info btn-sm mt-2">
+View Repository
+</a>
+
+</div>
+
+
+<div class="edu-card">
+
+<div class="edu-head">
+<i class="bi bi-diagram-3 edu-icon"></i>
+MLFLOW
+</div>
+
+<div class="edu-sub">
+Experiment Tracking and Model Management
+</div>
+
+<a href="https://github.com/Shrinath-Rajput/MLFLOW" target="_blank" class="btn btn-outline-info btn-sm mt-2">
+View Repository
+</a>
+
+</div>
+
+
+<div class="edu-card">
+
+<div class="edu-head">
+<i class="bi bi-hdd-network edu-icon"></i>
+IoT Workshop
+</div>
+
+<div class="edu-sub">
+Internet of Things Hands-on Workshop
+</div>
+
+<a href="https://github.com/Shrinath-Rajput/IOT-Workshop-" target="_blank" class="btn btn-outline-info btn-sm mt-2">
+View Repository
+</a>
+
+</div>
+
+
+<div class="edu-card">
+
+<div class="edu-head">
+<i class="bi bi-database edu-icon"></i>
+Database Query Practice
+</div>
+
+<div class="edu-sub">
+SQL Database Practice Repository
+</div>
+
+<a href="https://github.com/Shrinath-Rajput/databse-quey" target="_blank" class="btn btn-outline-info btn-sm mt-2">
+View Repository
+</a>
+
+</div>
+
+
+<div class="edu-card">
+
+<div class="edu-head">
+<i class="bi bi-play-circle edu-icon"></i>
+Krish Naik Machine Learning Course
+</div>
+
+<div class="edu-sub">
+Udemy Machine Learning Bootcamp by Krish Naik
+</div>
+
+<a href="https://www.udemy.com/share/10b9kU3@htBexk1ybckdI0wsESBHfFC_x7Z5BDIIytatBM5cPj0jbLUpVdb2ikdqS13Vjfk9pA==/" target="_blank" class="btn btn-outline-info btn-sm mt-2">
+View Course
+</a>
+
+</div>
+
+
+<div class="edu-card">
+
+<div class="edu-head">
+<i class="bi bi-play-circle edu-icon"></i>
+Python & Data Science Course
+</div>
+
+<div class="edu-sub">
+Udemy Programming Course
+</div>
+
+<a href="https://www.udemy.com/share/101SSu3@pGaorfGMCGZg7JCoC4k6AdGtUCpqQf5s0OtYk6Z-ECEDml0lbaG4Ha5TsjVDbaWBVA==/" target="_blank" class="btn btn-outline-info btn-sm mt-2">
+View Course
+</a>
+
+</div>
 
 </section>
 
-<script src="js/script.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
