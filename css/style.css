@@ -11,6 +11,8 @@ padding-top:80px;
 min-height:100vh;
 display:flex;
 align-items:center;
+justify-content:center;
+padding-top:120px;
 }
 
 /* PROFILE IMAGE */
@@ -40,7 +42,7 @@ margin-top:10px;
 
 .tags{
 margin-top:20px;
-opacity:0.85;
+opacity:0.9;
 }
 
 .tags span{
@@ -51,10 +53,6 @@ margin:5px;
 display:inline-block;
 color:#ddd;
 font-size:14px;
-}
-
-.tags:hover{
-opacity:1;
 }
 
 /* INFO CARDS */
@@ -131,33 +129,25 @@ justify-content:center;
 transition:0.3s;
 }
 
-/* ICON */
-
 .skill-circle img{
 width:40px;
 }
-
-/* TEXT */
 
 .skill-circle span{
 font-size:12px;
 margin-top:5px;
 }
 
-/* HOVER EFFECT */
-
 .skill-circle:hover{
 transform:scale(1.1);
 box-shadow:0 0 15px #00eaff;
 }
 
-/* ZIG ZAG LAYOUT */
-
 .skill-circle:nth-child(2n){
 transform:translateY(40px);
 }
 
-/* SKILLS GRID SECTION */
+/* SKILLS GRID */
 
 .skills-section{
 padding:40px 0 80px 0;
@@ -170,8 +160,6 @@ gap:25px;
 max-width:1100px;
 margin:auto;
 }
-
-/* SKILL CARD */
 
 .skill-card{
 background:#151922;
@@ -200,7 +188,7 @@ margin-bottom:6px;
 font-size:14px;
 }
 
-/* CERTIFICATE MODAL */
+/* CERTIFICATES */
 
 .modal-dialog{
 max-width:95%;
@@ -217,11 +205,6 @@ width:100%;
 height:auto;
 object-fit:contain;
 border-radius:10px;
-transition:0.3s;
-}
-
-.modal img:hover{
-transform:scale(1.02);
 }
 
 .cert-card img{
@@ -240,8 +223,6 @@ color:white;
 margin-bottom:15px;
 }
 
-/* PLACEHOLDER WHITE */
-
 input::placeholder,
 textarea::placeholder{
 color:white !important;
@@ -254,19 +235,20 @@ background:#0f1115;
 color:white;
 }
 
-/* RESPONSIVE */
+/* MOBILE RESPONSIVE */
 
 @media(max-width:768px){
 
 .hero{
-padding-top:80px;
+padding-top:140px;
 text-align:center;
 }
 
 .profile-img{
-width:170px;
-height:170px;
+width:180px;
+height:180px;
 margin:auto;
+display:block;
 }
 
 .tags{
@@ -303,55 +285,6 @@ width:30px;
 
 .skill-circle span{
 font-size:10px;
-}
-
-}
-
-/* HOME PAGE MOBILE FIX */
-
-.hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-padding-top:120px;
-}
-
-/* mobile */
-
-@media(max-width:768px){
-
-.hero{
-padding-top:140px;
-padding-left:15px;
-padding-right:15px;
-text-align:center;
-}
-
-.profile-img{
-width:180px;
-height:180px;
-margin:auto;
-display:block;
-}
-
-.tags{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.tags span{
-font-size:12px;
-padding:6px 12px;
-}
-
-.info-card{
-margin-top:15px;
-}
-
-.social{
-flex-wrap:wrap;
-gap:15px;
 }
 
 }
