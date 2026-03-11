@@ -8,11 +8,8 @@ padding-top:80px;
 /* HERO SECTION */
 
 .hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
 padding-top:120px;
+padding-bottom:40px;
 }
 
 /* PROFILE IMAGE */
@@ -42,7 +39,6 @@ margin-top:10px;
 
 .tags{
 margin-top:20px;
-opacity:0.9;
 }
 
 .tags span{
@@ -240,7 +236,7 @@ color:white;
 @media(max-width:768px){
 
 .hero{
-padding-top:140px;
+padding-top:100px;
 text-align:center;
 }
 
